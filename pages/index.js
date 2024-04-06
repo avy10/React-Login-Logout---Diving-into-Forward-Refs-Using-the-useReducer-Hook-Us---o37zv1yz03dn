@@ -54,7 +54,7 @@ export default function Home() {
 			{loginState.isLoggedIn && (
 				<section className="logout-section">
 					<h2>Logged in successfully!</h2>
-					<p>Welcome username!</p>
+					<p>Welcome {loginState.userNameInput}!</p>
 					<button
 						onClick={() =>
 							dispatch({
